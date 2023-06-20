@@ -1,0 +1,13 @@
+.miNavBar{
+    background-color: rgb(234, 95, 118) !important;
+}
+
+.navbar-brand{
+    font-size: 30px !important;
+    font-weight: bold;
+}
+
+.nav-link{
+    font-weight:600 !important;
+    color: white !important;
+}
