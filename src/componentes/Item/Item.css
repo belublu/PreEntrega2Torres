@@ -1,35 +1,42 @@
-.cardContenedor{
-    border: 1px solid #f5dde3 !important;
-    border-radius: 10px !important;
-    box-shadow: 5px -2px 6px rgba(218, 98, 98, 0.1) !important;
+.cardContenedor {
+    border: 1px solid #f5dde3;
+    border-radius: 10px;
+    box-shadow: 5px -2px 6px rgba(218, 98, 98, 0.1);
 }
 
-.cardContenedor:hover{
-    box-shadow: 0 0 10px #f07191 !important;
+.cardContenedor:hover {
+    box-shadow: 0 0 10px #f07191;
 }
 
-.imgItem{
-    width: auto !important;
-    height: 300px !important;
-    margin: 10px !important;
-    padding: 10px !important;
-    object-fit:contain;
+.imgItem {
+    width: auto;
+    height: 300px;
+    margin: 10px;
+    padding: 10px;
+    object-fit: contain;
 }
 
-.tituloCard{
-    font-size: 18px !important;
+.tituloCard {
+    font-size: 18px;
 }
 
-.marcaCard, .tamanoCard, .generoCard, .precioCard, .idCard{
-    margin-bottom: 5px !important;
-    font-weight: 500 !important;
+.tamanoCard,
+.generoCard,
+.precioCard,
+.idCard {
+    margin-bottom: 5px;
+    font-weight: 500;
 }
 
-.btnDetalle{
+.marcaCard{
+    margin-bottom: 20px;
+}
+
+.btnDetalle {
     border: rgb(234, 95, 118) !important;
     border-radius: 20px !important;
-    width: 100%;
+    width: 90%;
     background-color: rgb(234, 95, 118) !important;
-    font-weight:500 !important;
+    font-weight: 500;
     margin-top: 20px;
 }
