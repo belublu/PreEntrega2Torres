@@ -63,10 +63,10 @@ const misProductos = [
         id: 7,
         nombre: "Le Male",
         marca: "JEAN PAUL GAULTIER",
-        tamano: 200,
+        tamano: 125,
         genero: "Hombre",
         precio: 71000,
-        img: "./public/img/perfumes/jeanPaulGaultierLeMaleMan.jpg"
+        img: "./public/img/perfumes/jeanPaulGaultierLeMaleMan.webp"
     },
 
     {
@@ -99,3 +99,11 @@ export const getProductos = () => {
 }
 
 
+export const getProducto = (id) => {
+    return new Promise (resolve => {
+        setTimeout(() => {
+            const producto = misProductos.find(prod => prod.id === id)
+            resolve(producto)
+        }, 2000)
+    })
+}

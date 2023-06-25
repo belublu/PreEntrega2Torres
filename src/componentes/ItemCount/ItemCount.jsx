@@ -10,11 +10,11 @@ const ItemCount = () => {
         }
         
         const decrementar = () => {
-            if (contador <1){
+            if (contador >1){
                 setContador(contador - 1)
             }
         }
-        
+
     return (
         <>
             <button onClick={decrementar}> - </button>
