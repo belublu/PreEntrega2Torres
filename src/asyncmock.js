@@ -6,7 +6,7 @@ const misProductos = [
         tamano: 100,
         genero: "Hombre",
         precio: 43000,
-        img: "./public/img/perfumes/antonioBanderasKingOfSeductionAbsoluteMan.jpg"
+        img: "./img/perfumes/antonioBanderasKingOfSeductionAbsoluteMan.jpg"
     },
 
     {
@@ -16,7 +16,7 @@ const misProductos = [
         tamano: 100,
         genero: "Mujer",
         precio: 53000,
-        img: "./public/img/perfumes/boosForeverWoman.png"
+        img: "./img/perfumes/boosForeverWoman.png"
     },
 
     {
@@ -26,7 +26,7 @@ const misProductos = [
         tamano: 100,
         genero: "Mujer",
         precio: 42800,
-        img: "./public/img/perfumes/boosMidnightWoman.webp"
+        img: "./img/perfumes/boosMidnightWoman.webp"
     },
 
     {
@@ -36,7 +36,7 @@ const misProductos = [
         tamano: 100,
         genero: "Mujer",
         precio: 63000,
-        img: "./public/img/perfumes/channelN5Woman.webp"
+        img: "./img/perfumes/channelN5Woman.webp"
     },
 
     {
@@ -46,7 +46,7 @@ const misProductos = [
         tamano: 150,
         genero: "Hombre",
         precio: 48900,
-        img: "./public/img/perfumes/ckBeMan.jpg"
+        img: "./img/perfumes/ckBeMan.jpg"
     },
 
     {
@@ -56,7 +56,7 @@ const misProductos = [
         tamano: 100,
         genero: "Hombre",
         precio: 44300,
-        img: "./public/img/perfumes/givenchyGentlemanMan.webp"
+        img: "./img/perfumes/givenchyGentlemanMan.webp"
     },
 
     {
@@ -66,7 +66,7 @@ const misProductos = [
         tamano: 125,
         genero: "Hombre",
         precio: 71000,
-        img: "./public/img/perfumes/jeanPaulGaultierLeMaleMan.webp"
+        img: "./img/perfumes/jeanPaulGaultierLeMaleMan.webp"
     },
 
     {
@@ -76,7 +76,7 @@ const misProductos = [
         tamano: 100,
         genero: "Mujer",
         precio: 47800,
-        img: "./public/img/perfumes/marcJacobsPerfectWoman.jpg"
+        img: "./img/perfumes/marcJacobsPerfectWoman.jpg"
     },
 
     {
@@ -86,7 +86,7 @@ const misProductos = [
         tamano: 50,
         genero: "Niña",
         precio: 20000,
-        img: "./public/img/perfumes/mujercitasJulieGirl.png"
+        img: "./img/perfumes/MujercitasJulieGirl.png"
     },
 ]
 
