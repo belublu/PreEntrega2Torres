@@ -6,15 +6,18 @@ import "./NavBar.css"
 
 const NavBar = () => {
     return (
-        <Navbar bg="custom" variant="dark" className='miNavBar' >
+        <Navbar expand="md" bg="custom" variant="dark" className="miNavBar">
             <Container>
                 <Navbar.Brand href="#home">SCENTOPIA</Navbar.Brand>
-                <Nav className="ms-auto gap-4">
-                    <Nav.Link href="#home">Hombre</Nav.Link>
-                    <Nav.Link href="#features">Mujer</Nav.Link>
-                    <Nav.Link href="#pricing">Niños</Nav.Link>
-                    <Nav.Link href="#pricing">Accesorios</Nav.Link>
-                </Nav>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav className="ms-auto justify-content-end">
+                        <Nav.Link href="#home">Hombre</Nav.Link>
+                        <Nav.Link href="#features">Mujer</Nav.Link>
+                        <Nav.Link href="#pricing">Niños</Nav.Link>
+                        <Nav.Link href="#pricing">Accesorios</Nav.Link>
+                    </Nav>
+                </Navbar.Collapse>
                 <CartWidget />
             </Container>
         </Navbar>
