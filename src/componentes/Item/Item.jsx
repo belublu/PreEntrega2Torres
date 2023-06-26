@@ -9,7 +9,7 @@ const Item = ({ nombre, marca, tamano, genero, precio, id, img }) => {
     const precioPunto = precio.toLocaleString()
     return (
         <Col>
-            <Card className='cardContenedor' style={{ width: '18rem', height: '41rem' }}>
+            <Card className='cardContenedor mb-4' style={{ width: '18rem', height: '41rem' }}>
                 <Card.Img variant="top" src={img} alt={nombre} className='imgItem' />
                 <Card.Body className="d-flex flex-column">
                     <Card.Title className='tituloCard text-center'>{nombre}</Card.Title>

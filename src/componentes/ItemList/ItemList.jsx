@@ -1,14 +1,20 @@
-import Item from "../Item/Item"
+import Item from "../Item/Item";
 import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
 
 const ItemList = ({ productos }) => {
     return (
         <div className="container">
-            <Row className="gap-3">
-                {productos.map(producto => <Item key={producto.id} {...producto} />)}
+            <Row>
+                {productos.map(producto => (
+                    <Col xs={12} md={6} lg={3} key={producto.id}>
+                        <Item {...producto} />
+                    </Col>
+                ))}
             </Row>
         </div>
-    )
+    );
 }
 
-export default ItemList
+export default ItemList;
