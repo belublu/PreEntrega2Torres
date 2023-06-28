@@ -1,0 +1,32 @@
+.imgDetalleCkBe{
+    height: 500px !important;
+    width: 550px !important;
+}
+
+.tituloCard {
+    font-size: 18px;
+}
+
+.tamanoCard,
+.generoCard,
+.precioCard {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.marcaCard{
+    margin-bottom: 20px;
+}
+
+.descripcionCard{
+    font-size: 20px;
+}
+
+.btnAgregar {
+    border: rgb(234, 95, 118) !important;
+    border-radius: 20px !important;
+    width: 20%;
+    background-color: rgb(234, 95, 118) !important;
+    font-weight: 500;
+    margin-top: 20px;
+}
