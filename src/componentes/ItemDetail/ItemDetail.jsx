@@ -9,17 +9,18 @@ import "./ItemDetail.css"
 
 
 const ItemDetail = ({ nombre, precio, marca, tamano, img, descripcion }) => {
+    
     return (
         <div className='container mt-5'>
             <Row>
                 <Col>
-                    <Card className='cardContenedor mb-4' style={{ width: '100%', height: '61rem' }}>
+                    <Card className='cardContenedor mx-auto mb-4' style={{ width: '85%', height: '51rem' }}>
                         <Card.Img variant="top" src={img} className='imgItem'/>
                         <Card.Body>
                             <Card.Title className='tituloCard text-center'>{nombre}</Card.Title>
-                            <h6 className='marcaCard text-center'>{marca} </h6>
-                            <p className='tamanoCard'>Tamaño: {tamano}ml</p>
-                            <p className='precioCard'>Precio: $ {precio} </p>
+                            <h6 className='marcaCard text-center'>{marca}</h6>
+                            <p className='tamanoCard'>Tamaño:{tamano}ml</p>
+                            <p className='precioCard'>Precio: $ {precio}</p>
                             <p className='descripcionCard'>{descripcion}</p>
                             <div className='d-flex flex-row justify-content-center mt-5'>
                                 <Hooks />
