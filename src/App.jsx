@@ -18,8 +18,6 @@ const App = () => {
         <Route path="*" element={<h2>Sitio en construcción. Vuelva pronto.</h2>}/>
       </Routes>
       </BrowserRouter>
-      {/* <ItemListContainer greeting = {"Productos"}/>
-      <ItemDetailContainer/> */}
     </>
   )
 }

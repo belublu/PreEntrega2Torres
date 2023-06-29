@@ -2,7 +2,6 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import { Link } from 'react-router-dom';
-/* import ItemCount from '../ItemCount/ItemCount'; */
 import { Hooks } from '../../Hooks/Hooks';
 import "./Item.css"
 
@@ -23,7 +22,6 @@ const Item = ({ nombre, marca, tamano, genero, precio, id, img }) => {
                         <Hooks />
                     </div>
                     <div className='text-center'>
-                        {/* <Link to={`/item/${id}`}>VER DETALLES</Link> */}
                         <Button as={Link} to={`/item/${id}`} className='btnDetalle'>VER DETALLE</Button>
                     </div>
 

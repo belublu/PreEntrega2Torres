@@ -3,7 +3,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
-/* import ItemCount from '../ItemCount/ItemCount'; */
 import { Hooks } from '../../Hooks/Hooks';
 import "./ItemDetail.css"
 
