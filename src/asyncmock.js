@@ -8,6 +8,7 @@ const misProductos = [
         precio: 43000,
         img: "../img/perfumes/antonioBanderasKingOfSeductionAbsoluteMan.jpg",
         descripcion: "CK Be de Calvin Klein, es una fragancia de la familia Floral Amaderada para mujer y hombre.Por sus notas olfativas, está pensada para usada en el día a día y de manera atemporal. Dispone de una buena proyección y una durabilidad moderada.Esta fragancia es recomendada para hombres y mujeres de entre 20 y 40 años. Familia olfativa: Floral Amaderada. Notas de salida: lavanda, notas verdes, menta, mandarina, enebro de Virginia y bergamota. Notas de corazón: hierba verde, magnolia, orquídea, fresia, durazno y jazmín. Notas de fondo: sándalo, ámbar, opopónaco, almizcle, cedro y vainilla",
+        stock: 10,
         idCat: "2"
     },
 
@@ -20,7 +21,7 @@ const misProductos = [
         precio: 53000,
         img: "../img/perfumes/boosForeverWoman.png",
         descripcion: "CK Be de Calvin Klein, es una fragancia de la familia Floral Amaderada para mujer y hombre.Por sus notas olfativas, está pensada para usada en el día a día y de manera atemporal. Dispone de una buena proyección y una durabilidad moderada.Esta fragancia es recomendada para hombres y mujeres de entre 20 y 40 años. Familia olfativa: Floral Amaderada. Notas de salida: lavanda, notas verdes, menta, mandarina, enebro de Virginia y bergamota. Notas de corazón: hierba verde, magnolia, orquídea, fresia, durazno y jazmín. Notas de fondo: sándalo, ámbar, opopónaco, almizcle, cedro y vainilla",
-
+        stock: 10,
         idCat: "1"
     },
 
@@ -33,7 +34,7 @@ const misProductos = [
         precio: 42800,
         img: "../img/perfumes/boosMidnightWoman.webp",
         descripcion: "CK Be de Calvin Klein, es una fragancia de la familia Floral Amaderada para mujer y hombre.Por sus notas olfativas, está pensada para usada en el día a día y de manera atemporal. Dispone de una buena proyección y una durabilidad moderada.Esta fragancia es recomendada para hombres y mujeres de entre 20 y 40 años. Familia olfativa: Floral Amaderada. Notas de salida: lavanda, notas verdes, menta, mandarina, enebro de Virginia y bergamota. Notas de corazón: hierba verde, magnolia, orquídea, fresia, durazno y jazmín. Notas de fondo: sándalo, ámbar, opopónaco, almizcle, cedro y vainilla",
-
+        stock: 10,
         idCat: "1"
     },
 
@@ -46,7 +47,7 @@ const misProductos = [
         precio: 63000,
         img: "../img/perfumes/channelN5Woman.webp",
         descripcion: "CK Be de Calvin Klein, es una fragancia de la familia Floral Amaderada para mujer y hombre.Por sus notas olfativas, está pensada para usada en el día a día y de manera atemporal. Dispone de una buena proyección y una durabilidad moderada.Esta fragancia es recomendada para hombres y mujeres de entre 20 y 40 años. Familia olfativa: Floral Amaderada. Notas de salida: lavanda, notas verdes, menta, mandarina, enebro de Virginia y bergamota. Notas de corazón: hierba verde, magnolia, orquídea, fresia, durazno y jazmín. Notas de fondo: sándalo, ámbar, opopónaco, almizcle, cedro y vainilla",
-
+        stock: 10,
         idCat: "1"
     },
 
@@ -59,6 +60,7 @@ const misProductos = [
         precio: 48900,
         img: "../img/perfumes/ckBeMan.jpg",
         descripcion: "CK Be de Calvin Klein, es una fragancia de la familia Floral Amaderada para mujer y hombre.Por sus notas olfativas, está pensada para usada en el día a día y de manera atemporal. Dispone de una buena proyección y una durabilidad moderada.Esta fragancia es recomendada para hombres y mujeres de entre 20 y 40 años. Familia olfativa: Floral Amaderada. Notas de salida: lavanda, notas verdes, menta, mandarina, enebro de Virginia y bergamota. Notas de corazón: hierba verde, magnolia, orquídea, fresia, durazno y jazmín. Notas de fondo: sándalo, ámbar, opopónaco, almizcle, cedro y vainilla",
+        stock: 10,
         idCat: "2"
     },
 
@@ -71,7 +73,7 @@ const misProductos = [
         precio: 44300,
         img: "../img/perfumes/givenchyGentlemanMan.webp",
         descripcion: "CK Be de Calvin Klein, es una fragancia de la familia Floral Amaderada para mujer y hombre.Por sus notas olfativas, está pensada para usada en el día a día y de manera atemporal. Dispone de una buena proyección y una durabilidad moderada.Esta fragancia es recomendada para hombres y mujeres de entre 20 y 40 años. Familia olfativa: Floral Amaderada. Notas de salida: lavanda, notas verdes, menta, mandarina, enebro de Virginia y bergamota. Notas de corazón: hierba verde, magnolia, orquídea, fresia, durazno y jazmín. Notas de fondo: sándalo, ámbar, opopónaco, almizcle, cedro y vainilla",
-
+        stock: 10,
         idCat: "2"
     },
 
@@ -83,8 +85,8 @@ const misProductos = [
         genero: "Hombre",
         precio: 71000,
         img: "../img/perfumes/jeanPaulGaultierLeMaleMan.webp",
-                descripcion: "CK Be de Calvin Klein, es una fragancia de la familia Floral Amaderada para mujer y hombre.Por sus notas olfativas, está pensada para usada en el día a día y de manera atemporal. Dispone de una buena proyección y una durabilidad moderada.Esta fragancia es recomendada para hombres y mujeres de entre 20 y 40 años. Familia olfativa: Floral Amaderada. Notas de salida: lavanda, notas verdes, menta, mandarina, enebro de Virginia y bergamota. Notas de corazón: hierba verde, magnolia, orquídea, fresia, durazno y jazmín. Notas de fondo: sándalo, ámbar, opopónaco, almizcle, cedro y vainilla",
-
+        descripcion: "CK Be de Calvin Klein, es una fragancia de la familia Floral Amaderada para mujer y hombre.Por sus notas olfativas, está pensada para usada en el día a día y de manera atemporal. Dispone de una buena proyección y una durabilidad moderada.Esta fragancia es recomendada para hombres y mujeres de entre 20 y 40 años. Familia olfativa: Floral Amaderada. Notas de salida: lavanda, notas verdes, menta, mandarina, enebro de Virginia y bergamota. Notas de corazón: hierba verde, magnolia, orquídea, fresia, durazno y jazmín. Notas de fondo: sándalo, ámbar, opopónaco, almizcle, cedro y vainilla",
+        stock: 10,
         idCat: "2"
     },
 
@@ -97,7 +99,7 @@ const misProductos = [
         precio: 47800,
         img: "../img/perfumes/marcJacobsPerfectWoman.jpg",
         descripcion: "CK Be de Calvin Klein, es una fragancia de la familia Floral Amaderada para mujer y hombre.Por sus notas olfativas, está pensada para usada en el día a día y de manera atemporal. Dispone de una buena proyección y una durabilidad moderada.Esta fragancia es recomendada para hombres y mujeres de entre 20 y 40 años. Familia olfativa: Floral Amaderada. Notas de salida: lavanda, notas verdes, menta, mandarina, enebro de Virginia y bergamota. Notas de corazón: hierba verde, magnolia, orquídea, fresia, durazno y jazmín. Notas de fondo: sándalo, ámbar, opopónaco, almizcle, cedro y vainilla",
-
+        stock: 10,
         idCat: "1"
     },
 
@@ -110,7 +112,7 @@ const misProductos = [
         precio: 20000,
         img: "../img/perfumes/mujercitasJulieGirl.png",
         descripcion: "CK Be de Calvin Klein, es una fragancia de la familia Floral Amaderada para mujer y hombre.Por sus notas olfativas, está pensada para usada en el día a día y de manera atemporal. Dispone de una buena proyección y una durabilidad moderada.Esta fragancia es recomendada para hombres y mujeres de entre 20 y 40 años. Familia olfativa: Floral Amaderada. Notas de salida: lavanda, notas verdes, menta, mandarina, enebro de Virginia y bergamota. Notas de corazón: hierba verde, magnolia, orquídea, fresia, durazno y jazmín. Notas de fondo: sándalo, ámbar, opopónaco, almizcle, cedro y vainilla",
-
+        stock: 10,
         idCat: "3"
     },
 
@@ -123,7 +125,7 @@ const misProductos = [
         precio: 32000,
         img: "../img/perfumes/moschinoToy2Girl.webp",
         descripcion: "CK Be de Calvin Klein, es una fragancia de la familia Floral Amaderada para mujer y hombre.Por sus notas olfativas, está pensada para usada en el día a día y de manera atemporal. Dispone de una buena proyección y una durabilidad moderada.Esta fragancia es recomendada para hombres y mujeres de entre 20 y 40 años. Familia olfativa: Floral Amaderada. Notas de salida: lavanda, notas verdes, menta, mandarina, enebro de Virginia y bergamota. Notas de corazón: hierba verde, magnolia, orquídea, fresia, durazno y jazmín. Notas de fondo: sándalo, ámbar, opopónaco, almizcle, cedro y vainilla",
-
+        stock: 10,
         idCat: "3"
     },
 
@@ -136,7 +138,7 @@ const misProductos = [
         precio: 33000,
         img: "../img/perfumes/moschinoToyBoy.webp",
         descripcion: "CK Be de Calvin Klein, es una fragancia de la familia Floral Amaderada para mujer y hombre.Por sus notas olfativas, está pensada para usada en el día a día y de manera atemporal. Dispone de una buena proyección y una durabilidad moderada.Esta fragancia es recomendada para hombres y mujeres de entre 20 y 40 años. Familia olfativa: Floral Amaderada. Notas de salida: lavanda, notas verdes, menta, mandarina, enebro de Virginia y bergamota. Notas de corazón: hierba verde, magnolia, orquídea, fresia, durazno y jazmín. Notas de fondo: sándalo, ámbar, opopónaco, almizcle, cedro y vainilla",
-
+        stock: 10,
         idCat: "4"
     },
 
@@ -149,7 +151,7 @@ const misProductos = [
         precio: 20000,
         img: "../img/sets/givenchySetRosaWoman.webp",
         descripcion: "CK Be de Calvin Klein, es una fragancia de la familia Floral Amaderada para mujer y hombre.Por sus notas olfativas, está pensada para usada en el día a día y de manera atemporal. Dispone de una buena proyección y una durabilidad moderada.Esta fragancia es recomendada para hombres y mujeres de entre 20 y 40 años. Familia olfativa: Floral Amaderada. Notas de salida: lavanda, notas verdes, menta, mandarina, enebro de Virginia y bergamota. Notas de corazón: hierba verde, magnolia, orquídea, fresia, durazno y jazmín. Notas de fondo: sándalo, ámbar, opopónaco, almizcle, cedro y vainilla",
-
+        stock: 10,
         idCat: "5"
     },
 
@@ -162,7 +164,7 @@ const misProductos = [
         precio: 51300,
         img: "../img/sets/carolinaHerreraBadBoyMan.webp",
         descripcion: "CK Be de Calvin Klein, es una fragancia de la familia Floral Amaderada para mujer y hombre.Por sus notas olfativas, está pensada para usada en el día a día y de manera atemporal. Dispone de una buena proyección y una durabilidad moderada.Esta fragancia es recomendada para hombres y mujeres de entre 20 y 40 años. Familia olfativa: Floral Amaderada. Notas de salida: lavanda, notas verdes, menta, mandarina, enebro de Virginia y bergamota. Notas de corazón: hierba verde, magnolia, orquídea, fresia, durazno y jazmín. Notas de fondo: sándalo, ámbar, opopónaco, almizcle, cedro y vainilla",
-
+        stock: 10,
         idCat: "5"
     },
 ]

@@ -1,16 +1,16 @@
 import { useState } from "react";
 
-export const useContador = (valorInicial, valorMaximo) => {
-    const [contador, setContador] = useState(valorInicial)
+export const useContador = (inicial, stock) => {
+    const [contador, setContador] = useState(inicial)
 
     const incrementar = () => {
-        if (contador < valorMaximo){
+        if (contador < stock){
             setContador(contador + 1)
         }
     }
 
     const decrementar = () => {
-        if (contador > valorInicial){
+        if (contador > 1){
             setContador (contador - 1)
         }
     }

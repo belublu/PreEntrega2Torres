@@ -18,9 +18,6 @@ const Item = ({ nombre, marca, tamano, genero, precio, id, img }) => {
                     <p className='generoCard'>Género:{genero}</p>
                     <p className='precioCard'>Precio:${precioPunto}</p>
                     <p className='idCard'>ID:{id}</p>
-                    <div className='d-flex flex-row justify-content-center'>
-                        <Hooks />
-                    </div>
                     <div className='text-center'>
                         <Button as={Link} to={`/item/${id}`} className='btnDetalle'>VER DETALLE</Button>
                     </div>
