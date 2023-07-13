@@ -5,14 +5,19 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import { Hooks } from '../../Hooks/Hooks';
 import { Link } from 'react-router-dom';
+import { CarritoContext } from '../../context/CarritoContext';
+import { useContext } from 'react';
 import "./ItemDetail.css"
 
-const ItemDetail = ({ nombre, precio, marca, tamano, img, descripcion, stock }) => {
+const ItemDetail = ({id, nombre, precio, marca, tamano, img, descripcion, stock }) => {
     const [agregarCantidad, setAgregarCantidad] = useState(0)
 
+    const { agregarProducto } = useContext(CarritoContext)
+    
     const manejadorCantidad = (cantidad) => {
         setAgregarCantidad(cantidad)
-        console.log("Productos agregados: " + cantidad)
+        const item = { id, nombre, precio }
+        agregarProducto(item, cantidad)
     }
 
     return (
