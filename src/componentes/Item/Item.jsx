@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { Hooks } from '../../Hooks/Hooks';
 import "./Item.css"
 
-const Item = ({ nombre, marca, tamano, genero, precio, id, img }) => {
+const Item = ({ nombre, marca, tamano, genero, precio, id, img, stock }) => {
     const precioPunto = precio.toLocaleString()
     return (
         <Col>
@@ -17,6 +17,7 @@ const Item = ({ nombre, marca, tamano, genero, precio, id, img }) => {
                     <p className='tamanoCard'>Tamaño:{tamano}ml</p>
                     <p className='generoCard'>Género:{genero}</p>
                     <p className='precioCard'>Precio:${precioPunto}</p>
+                    <p className='precioCard'>Stock: {stock} unidades disponibles</p>
                     <p className='idCard'>ID:{id}</p>
                     <div className='text-center'>
                         <Button as={Link} to={`/item/${id}`} className='btnDetalle'>VER DETALLE</Button>
