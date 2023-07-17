@@ -58,7 +58,7 @@ const Checkout = () => {
             <h2>Checkout</h2>
             <form onSubmit={manejadorFormulario}>
                 {
-                    carrito.map(producto   => (
+                    carrito.map(producto=> (
                         <div key={producto.item.id}>
                             <p>{producto.item.nombre} x {producto.cantidadTotal}</p>
                             <p>{producto.item.precio}</p>

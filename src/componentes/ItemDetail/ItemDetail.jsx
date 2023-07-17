@@ -31,6 +31,7 @@ const ItemDetail = ({id, nombre, precio, marca, tamano, img, descripcion, stock 
                             <h6 className='marcaCard text-center'>{marca}</h6>
                             <p className='tamanoCard'>Tamaño:{tamano}ml</p>
                             <p className='precioCard'>Precio: $ {precio}</p>
+                            {/* <p className='precioCard'>ID: {id} </p> */}
                             <p className='descripcionCard'>{descripcion}</p>
                             {/* <div className='d-flex flex-row justify-content-center mt-5'>
                                 <Hooks />
