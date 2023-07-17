@@ -1,14 +1,14 @@
 import { useState, useContext } from "react"
 import { CarritoContext } from "../../context/CarritoContext"
 import { db } from "../../services/config"
-import { collection, addDoc, DocumentReference } from "firebase/firestore"
+import { collection, addDoc } from "firebase/firestore"
 
 const Checkout = () => {
     const [nombre, setNombre] = useState("")
     const [apellido, setApellido] = useState("")
     const [telefono, setTelefono] = useState("")
     const [email, setEmail] = useState("")
-    const [emailConfirmacion, setMailConfirmacion] = useState("")
+    const [emailConfirmacion, setEmailConfirmacion] = useState("")
     const [error, setError] = useState("")
     const [ordenId, setOrdenId] = useState("")
 
@@ -31,7 +31,7 @@ const Checkout = () => {
             items: carrito.map(producto => ({
                 id: producto.item.id,
                 nombre: producto.item.nombre,
-                cantidad: producto.item.cantidad
+                cantidad: producto.cantidad
             })),
             total: total,
             fecha: new Date(),
@@ -43,12 +43,12 @@ const Checkout = () => {
 
         addDoc(collection(db, "ordenes"), orden)
             .then(docRef => {
-                setOrdenId(docRef.id)
-                vaciarCarrito()
+                setOrdenId(docRef.id);
+                vaciarCarrito();
             })
             .catch(error => {
-                console.log("Ha ocurrido un error al crear la orden", error)
-                setError("Ha ocurrido un error al crear la orden")
+                console.log("Error al crear la orden", error);
+                setError("Se produjo un error al crear la orden, vamos a morir!!");
             })
     }
 
@@ -58,7 +58,7 @@ const Checkout = () => {
             <h2>Checkout</h2>
             <form onSubmit={manejadorFormulario}>
                 {
-                    carrito.map(producto=> (
+                    carrito.map(producto => (
                         <div key={producto.item.id}>
                             <p>{producto.item.nombre} x {producto.cantidadTotal}</p>
                             <p>{producto.item.precio}</p>
@@ -99,7 +99,7 @@ const Checkout = () => {
             </form>
             {
                 ordenId && (
-                    <strong>Muchas gracias por tu compra! La orden de compra es: {order}</strong>
+                    <strong>Muchas gracias por tu compra! La orden de compra es: {ordenId}</strong>
                 )
             }
 
