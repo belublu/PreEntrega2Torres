@@ -1,4 +1,4 @@
-import { useState } from "react";
+/* import { useState } from "react";
 
 const ItemCount = ({ inicial, stock, agregarItem }) => {
     const [contador, setContador] = useState(inicial)
@@ -27,4 +27,4 @@ const ItemCount = ({ inicial, stock, agregarItem }) => {
     )
 }
 
-export default ItemCount
+export default ItemCount */

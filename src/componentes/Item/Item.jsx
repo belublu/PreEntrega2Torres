@@ -14,7 +14,7 @@ const Item = ({ nombre, marca, tamano, genero, precio, id, img, stock }) => {
                 <Card.Body className="d-flex flex-column">
                     <Card.Title className='tituloCard text-center'>{nombre}</Card.Title>
                     <h6 className='marcaCard text-center'>{marca} </h6>
-                    <p className='tamanoCard'>Tamaño:{tamano}ml</p>
+                    <p className='tamanoCard'>Tamaño: {tamano}ml</p>
                     <p className='generoCard'>Género:{genero}</p>
                     <p className='precioCard'>Precio:${precioPunto}</p>
                     <p className='precioCard'>Stock: {stock} unidades disponibles</p>

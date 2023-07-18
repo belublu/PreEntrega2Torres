@@ -24,7 +24,7 @@ const ItemDetail = ({id, nombre, precio, marca, tamano, img, descripcion, stock 
         <div className='container mt-5'>
             <Row>
                 <Col>
-                    <Card className='cardContenedor mx-auto mb-4' style={{ width: '85%', height: '51rem' }}>
+                    <Card className='cardContenedor mx-auto mb-4' style={{ width: '85%', height: '53rem' }}>
                         <Card.Img variant="top" src={img} className='imgItem' />
                         <Card.Body>
                             <Card.Title className='tituloCard text-center'>{nombre}</Card.Title>
@@ -41,7 +41,7 @@ const ItemDetail = ({id, nombre, precio, marca, tamano, img, descripcion, stock 
                             </div> */}
                             <div className='d-flex flex-row justify-content-center mt-5'>
                                 {
-                                    agregarCantidad > 0 ? (<Link to="/cart">Finalizar compra</Link>) : (<Hooks inicial={1} stock={stock} agregar={manejadorCantidad} />)
+                                    agregarCantidad > 0 ? (<Link to="/cart" className='finalizarCompra mt-1'>FINALIZAR COMPRA</Link>) : (<Hooks inicial={1} stock={stock} agregar={manejadorCantidad} />)
                                 }
                             </div>
 

@@ -7,7 +7,8 @@ import CartItem from "../CartItem/CartItem"
 
 const Cart = () => {
     const { carrito, vaciarCarrito, total, cantidadTotal } = useContext(CarritoContext)
-    console.log(carrito[0].item.id, "Esto es carrito id")
+    /* console.log(carrito[0].item.id, "Esto es carrito id") */
+    const totalPunto = total.toLocaleString()
 
     if (cantidadTotal === 0) {
         return (
@@ -23,8 +24,8 @@ const Cart = () => {
             {carrito.map(producto => <CartItem key={producto.id} {...producto} />)}
 
 
-            <h3>Total: ${total}</h3>
-            <h3>Cantidad total: {cantidadTotal}</h3>
+            <h3>Total: ${totalPunto}</h3>
+            <h3>Cantidad de productos: {cantidadTotal}</h3>
             <button onClick={() => vaciarCarrito()}>Vaciar carrito</button>
             <Link to="/checkout">Finalizar compra</Link>
         </div>

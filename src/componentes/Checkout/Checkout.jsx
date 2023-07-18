@@ -3,13 +3,16 @@ import { CarritoContext } from "../../context/CarritoContext"
 import { db } from "../../services/config"
 import { collection, addDoc } from "firebase/firestore"
 
+
 const Checkout = () => {
     const [nombre, setNombre] = useState("")
     const [apellido, setApellido] = useState("")
     const [telefono, setTelefono] = useState("")
+    const [direccion, setDireccion] = useState("")
     const [email, setEmail] = useState("")
     const [emailConfirmacion, setEmailConfirmacion] = useState("")
     const [error, setError] = useState("")
+    const [metodoPago, setMetodoPago] = useState("")
     const [ordenId, setOrdenId] = useState("")
 
     const { carrito, vaciarCarrito, total, cantidadTotal } = useContext(CarritoContext)
@@ -17,7 +20,7 @@ const Checkout = () => {
     const manejadorFormulario = (event) => {
         event.preventDefault()
 
-        if (!nombre || !apellido || !telefono || !email || !emailConfirmacion) {
+        if (!nombre || !apellido || !telefono || !direccion || !email || !emailConfirmacion || !metodoPago) {
             setError("Por favor completa todos los campos.")
             return
         }
@@ -38,7 +41,9 @@ const Checkout = () => {
             nombre,
             apellido,
             telefono,
-            email
+            direccion,
+            email,
+            metodoPago
         }
 
         addDoc(collection(db, "ordenes"), orden)
@@ -80,6 +85,31 @@ const Checkout = () => {
                 <div className="form-group">
                     <label htmlFor="">Teléfono</label>
                     <input type="text" value={telefono} onChange={(e) => setTelefono(e.target.value)} />
+                </div>
+
+                <div className="form-group">
+                    <label htmlFor="">Dirección</label>
+                    <input type="text" value={direccion} onChange={(e) => setDireccion(e.target.value)} placeholder="Ingrese la dirección de entrega." />
+                </div>
+
+
+                <div className="form-group">
+                    <label htmlFor="">Método de pago: </label>
+
+                    <label htmlFor="">
+                        <input type="radio" value={metodoPago} checked={metodoPago === "Tarjeta de Crédito"} onChange={(e) => setMetodoPago(e.target.checked ? "Tarjeta de Crédito" : "")} /> Tarjeta de Crédito
+                    </label>
+
+                    <label htmlFor="">
+                        <input type="radio" value={metodoPago} checked={metodoPago === "Tarjeta de Débito"} onChange={(e) => setMetodoPago(e.target.checked ? "Tarjeta de Débito" : "")} /> Tarjeta de Débito
+                    </label>
+
+                    <label htmlFor="">
+                        <input type="radio" value={metodoPago} checked={metodoPago === "Transferencia Bancaria"} onChange={(e) => setMetodoPago(e.target.checked ? "Transferencia" : "")} /> Transferencia Bancaria
+                    </label>
+
+
+                    {/* <input type="radio" value={metodoPago} onChange={(e) => setMetodoPago(e.target.value)}/>Tarjeta de Débito */}
                 </div>
 
                 <div className="form-group">

@@ -12,3 +12,14 @@
     background-color: rgb(245, 177, 188);
     justify-content: center;
 }
+
+.btnAgregar {
+    border: rgb(234, 95, 118) !important;
+    border-radius: 20px !important;
+    width: 20%;
+    height: 38px;
+    background-color: rgb(234, 95, 118) !important;
+    color: white;
+    font-weight: 400;
+    margin-top: 20px;
+}

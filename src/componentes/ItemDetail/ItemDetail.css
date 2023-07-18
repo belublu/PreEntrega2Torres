@@ -1,6 +1,12 @@
-.imgDetalleCkBe{
+/* .imgDetalleCkBe{
     height: 500px !important;
     width: 550px !important;
+} */
+
+.imgItem{
+    height: 60%;
+    margin: 0;
+    padding: 0;
 }
 
 .tituloCard {
@@ -10,23 +16,31 @@
 .tamanoCard,
 .generoCard,
 .precioCard {
-    margin-bottom: 5px;
+    margin-bottom: 4px;
     font-weight: 500;
 }
 
 .marcaCard{
-    margin-bottom: 20px;
+    margin-bottom: 0;
 }
 
 .descripcionCard{
-    font-size: 20px;
+    font-size: 16px;
 }
 
-.btnAgregar {
-    border: rgb(234, 95, 118) !important;
+.finalizarCompra{
+    text-decoration: none;
     border-radius: 20px !important;
     width: 20%;
-    background-color: rgb(234, 95, 118) !important;
+    padding: 10px;
+    background-color: rgb(234, 95, 118);
+    color: white;
+    font-size: 18px;
     font-weight: 500;
     margin-top: 20px;
+    text-align: center;
+}
+
+.finalizarCompra:hover{
+    background-color: rgb(223, 60, 87);
 }
