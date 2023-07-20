@@ -19,6 +19,8 @@ const Cart = () => {
         )
     }
 
+    
+
     return (
         <div>
             {carrito.map(producto => <CartItem key={producto.id} {...producto} />)}
@@ -30,7 +32,7 @@ const Cart = () => {
             <Link to="/checkout">Finalizar compra</Link>
         </div>
     )
-    
+
 }
 
 export default Cart

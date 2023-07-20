@@ -3,8 +3,8 @@
     width: 550px !important;
 } */
 
-.imgItem{
-    height: 60%;
+.imgItem {
+    height: 50%;
     margin: 0;
     padding: 0;
 }
@@ -20,18 +20,18 @@
     font-weight: 500;
 }
 
-.marcaCard{
+.marcaCard {
     margin-bottom: 0;
 }
 
-.descripcionCard{
+.descripcionCard {
     font-size: 16px;
 }
 
-.finalizarCompra{
+.finalizarCompra {
     text-decoration: none;
     border-radius: 20px !important;
-    width: 20%;
+    width: 40%;
     padding: 10px;
     background-color: rgb(234, 95, 118);
     color: white;
@@ -41,6 +41,17 @@
     text-align: center;
 }
 
-.finalizarCompra:hover{
+.finalizarCompra:hover {
     background-color: rgb(223, 60, 87);
+}
+
+
+/* Estilos para versiones mayores a tablet */
+
+/* Estilos para versiones mayores a tablet */
+@media (min-width: 769px) {
+    .cardContenedorDetail {
+        height: 55rem !important;
+        /* Altura fija para versiones mayores a tablet */
+    }
 }

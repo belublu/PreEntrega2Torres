@@ -1,7 +1,7 @@
 import { useState, useContext } from "react"
 import { CarritoContext } from "../../context/CarritoContext"
 import { db } from "../../services/config"
-import { collection, addDoc } from "firebase/firestore"
+import { collection, addDoc, updateDoc, doc, getDoc } from "firebase/firestore"
 
 
 const Checkout = () => {
@@ -14,6 +14,7 @@ const Checkout = () => {
     const [error, setError] = useState("")
     const [metodoPago, setMetodoPago] = useState("")
     const [ordenId, setOrdenId] = useState("")
+    const [formularioEnviado, setFormularioEnviado] = useState(false)
 
     const { carrito, vaciarCarrito, total, cantidadTotal } = useContext(CarritoContext)
 
@@ -29,6 +30,7 @@ const Checkout = () => {
             setError("Los campos de email no coinciden.")
             return
         }
+        
 
         const orden = {
             items: carrito.map(producto => ({
@@ -46,7 +48,39 @@ const Checkout = () => {
             metodoPago
         }
 
-        addDoc(collection(db, "ordenes"), orden)
+        Promise.all(
+            orden.items.map(async(productoOrden)=> {
+                const productoRef = doc(db, "inventario", productoOrden.id)
+
+                const productoDoc = await getDoc(productoRef)
+                const stockActual = productoDoc.data().stock
+
+                await updateDoc(productoRef,{
+                    stock: stockActual - productoOrden.cantidad
+                })
+                .then(()=>{
+                    addDoc(collection(db, "ordenes"), orden)
+                        .then((docRef)=>{
+                            setOrdenId(docRef.id)
+                            vaciarCarrito()
+                            setFormularioEnviado(true)
+                        })
+                        .catch((error) => {
+                            console.log("Error al crear la orden de compra.")
+                            setError("Error al crear la orden de compra. Por favor intentelo nuevamente.")
+                        })
+                })
+                .catch((error) => {
+                    console.log("No se puede actualizar el stock.")
+                    setError("No se puede actualizar el error.")
+                })
+            })
+            
+        )
+
+
+
+        /* addDoc(collection(db, "ordenes"), orden)
             .then(docRef => {
                 setOrdenId(docRef.id);
                 vaciarCarrito();
@@ -54,13 +88,19 @@ const Checkout = () => {
             .catch(error => {
                 console.log("Error al crear la orden", error);
                 setError("Se produjo un error al crear la orden, vamos a morir!!");
-            })
+            }) */
     }
 
 
     return (
         <div>
-            <h2>Checkout</h2>
+            {formularioEnviado ? (
+                <div>
+                    <strong>Muchas gracias por su compra! Su orden es: {ordenId}</strong>
+                </div>
+            ):(
+                <div>
+                    <h2>Checkout</h2>
             <form onSubmit={manejadorFormulario}>
                 {
                     carrito.map(producto => (
@@ -121,19 +161,18 @@ const Checkout = () => {
                     <label htmlFor="">Confirmar Email</label>
                     <input type="email" value={emailConfirmacion} onChange={(e) => setEmailConfirmacion(e.target.value)} />
                 </div>
-
-                {
-                    error && <p style={{ color: "red" }}> {error}</p>
-                }
                 <button type="submit">Finalizar Compra</button>
             </form>
             {
+                    error && <p style={{ color: "red" }}> {error}</p>
+                }
+            {/* {
                 ordenId && (
                     <strong>Muchas gracias por tu compra! La orden de compra es: {ordenId}</strong>
                 )
-            }
-
-
+            } */}
+                </div>
+            )}
         </div>
     )
 }
