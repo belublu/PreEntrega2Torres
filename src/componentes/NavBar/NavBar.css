@@ -2,12 +2,14 @@
     background-color: rgb(234, 95, 118);
 }
 
-.navbar-brand{
-    font-size: 30px !important;
+.navbar .navBarPersonalizado{
+    font-size: 40px;
     font-weight: bold;
 }
 
-.nav-link{
-    font-weight:600 !important;
-    color: white !important;
+.navbar .navLinkPersonalizado{
+    font-size: 20px;
+    font-weight:600;
+    color: white;
 }
+

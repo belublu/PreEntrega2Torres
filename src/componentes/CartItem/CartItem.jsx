@@ -9,23 +9,25 @@ const CartItem = ({ item, cantidad }) => {
 
     return (
         <div className="container">
-            <Row>
+            <Row className="mt-5">
                 <Col>
                     <img src={item.img} alt="Foto producto en carrito" className="productoEnCarrito m-5" />
                 </Col>
                 <Col className="d-flex align-items-center justify-content-center me-5">
                     <h4> {item.nombre} </h4>
                 </Col>
+                <Col className="d-flex align-items-center justify-content-center me-5">
+                    <h5> {item.marca} </h5>
+                </Col>
                 <Col className="d-flex flex-column justify-content-center align-items-center">
-                    <p> Cantidad: {cantidad}</p>
-                    <p>Precio: ${item.precio.toLocaleString()} cada uno</p>
+                    <p className="cantidadCart"> Cantidad: {cantidad}</p>
+                    <p className="precioCart">Precio: ${item.precio.toLocaleString()}</p>
                 </Col>
                 <Col className="d-flex align-items-center justify-content-center">
-                    <button onClick={() => eliminarProducto(item.id)}>Eliminar</button>
+                    <button onClick={() => eliminarProducto(item.id)} className="btnCartItem">Eliminar</button>
                 </Col>
                 <hr />
             </Row>
-
         </div>
     )
 }

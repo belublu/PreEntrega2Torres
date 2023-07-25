@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react"
-/* import { getProductos, getProductosCategoria } from "../../asyncmock" */
 import ItemList from "../ItemList/ItemList"
 import { useParams } from "react-router-dom"
 import { collection, getDocs, where, query, getDoc } from "firebase/firestore"
@@ -23,13 +22,6 @@ const ItemListContainer = ({ greeting }) => {
             })
             .catch(error => console.log(error))
     }, [idCategoria])
-    
-    /* useEffect (() => {
-        const funcion = idCategoria ?  getProductosCategoria : getProductos
-
-        funcion (idCategoria)
-            .then (respuesta => setProductos(respuesta))
-    }, [idCategoria]) */
     
     return (
         <main className="mainProductos">

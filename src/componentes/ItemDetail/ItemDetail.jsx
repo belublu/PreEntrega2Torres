@@ -16,17 +16,15 @@ const ItemDetail = ({ id, nombre, precio, marca, tamano, img, descripcion, stock
 
     const manejadorCantidad = (cantidad) => {
         setAgregarCantidad(cantidad)
-        const item = { id, nombre, precio, img }
+        const item = { id, nombre, precio, img, marca }
         agregarProducto(item, cantidad)
     }
-
-
 
     return (
         <div className='container mt-5'>
             <Row className='align-items-center justify-content-center'>
                 <Col sm={12} md={8} lg={8}>
-                    <Card className='cardContenedor cardContenedorDetail mx-auto mb-4' style={{ height: '100vh' }}>
+                    <Card className='cardContenedor cardContenedorDetail'>
                         <Card.Img variant="top" src={img} className='imgItem' />
                         <Card.Body>
                             <Card.Title className='tituloCard text-center'>{nombre}</Card.Title>
@@ -34,8 +32,7 @@ const ItemDetail = ({ id, nombre, precio, marca, tamano, img, descripcion, stock
                             <p className='tamanoCard'>Tamaño:{tamano}ml</p>
                             <p className='precioCard'>Precio: $ {precio}</p>
                             <p className='descripcionCard'>{descripcion}</p>
-
-                            <div className='d-flex flex-row justify-content-center mt-5'>
+                            <div className='d-flex flex-row justify-content-center mt-2 gap-5'>
                                 {
                                     agregarCantidad > 0 ? (
                                         <>
@@ -49,18 +46,12 @@ const ItemDetail = ({ id, nombre, precio, marca, tamano, img, descripcion, stock
                                         </>
                                     ) : (
                                         <Hooks inicial={1} stock={stock} agregar={manejadorCantidad} />)
-
-
                                 }
-
                             </div>
-
-
                         </Card.Body>
                     </Card>
                 </Col>
             </Row>
-
         </div>
     )
 }

@@ -9,17 +9,22 @@
     color: white;
     font-size: 1.2rem;
     font-weight: 600;
-    background-color: rgb(245, 177, 188);
+    background-color: rgb(234, 95, 118);
     justify-content: center;
 }
 
 .btnAgregar {
-    border: rgb(234, 95, 118) !important;
-    border-radius: 20px !important;
-    width: 20%;
+    border: rgb(234, 95, 118);
+    border-radius: 20px;
+    width: 150%;
     height: 38px;
-    background-color: rgb(234, 95, 118) !important;
+    background-color: rgb(234, 95, 118);
     color: white;
-    font-weight: 400;
+    font-weight: 500;
     margin-top: 20px;
+}
+
+.btnAgregar:hover {
+    background-color: rgb(223, 60, 87);
+    box-shadow: 0 0 4px #e5335f
 }

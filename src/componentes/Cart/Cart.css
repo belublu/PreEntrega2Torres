@@ -1,0 +1,32 @@
+.linkCarrito{
+    font-size: 25px;
+    text-decoration: none;
+    color: #e5335f;
+    font-weight: 500;
+}
+
+.btnCartVaciar, .btnCartFinalizar{
+    color: white;
+    border: rgb(234, 95, 118);
+    border-radius: 20px;
+    width: 300px;
+    height: 40px;
+    background-color: rgb(234, 95, 118);
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.btnCartVaciar:hover, .btnCartFinalizar:hover {
+    box-shadow: 0 0 10px #e5335f;
+    background-color: rgb(223, 60, 87);
+    --bs-btn-hover-bg: rgb(234, 95, 118);
+}
+
+.btnCartVaciar{
+    font-size: 20px;
+}
+
+.btnCartFinalizar{
+    text-decoration: none;
+    font-size: 20px;
+}

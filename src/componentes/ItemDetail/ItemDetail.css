@@ -1,12 +1,10 @@
-/* .imgDetalleCkBe{
-    height: 500px !important;
-    width: 550px !important;
-} */
+.cardContenedorDetail{
+    max-width: 50%;
+    margin: 0 auto;
+}
 
 .imgItem {
     height: 50%;
-    margin: 0;
-    padding: 0;
 }
 
 .tituloCard {
@@ -37,21 +35,10 @@
     color: white;
     font-size: 18px;
     font-weight: 500;
-    margin-top: 20px;
     text-align: center;
 }
 
 .finalizarCompra:hover {
     background-color: rgb(223, 60, 87);
-}
-
-
-/* Estilos para versiones mayores a tablet */
-
-/* Estilos para versiones mayores a tablet */
-@media (min-width: 769px) {
-    .cardContenedorDetail {
-        height: 55rem !important;
-        /* Altura fija para versiones mayores a tablet */
-    }
+    box-shadow: 0 0 4px #e5335f;
 }

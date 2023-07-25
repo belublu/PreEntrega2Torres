@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react"
-/* import { getProducto } from "../../asyncmock" */
 import ItemDetail from "../ItemDetail/ItemDetail"
 import { useParams } from "react-router-dom"
 import { getDoc, doc } from "firebase/firestore"
@@ -21,11 +20,6 @@ const ItemDetailContainer = () => {
             .catch(error => console.log(error))
     }, [idItem])
 
-    /* useEffect(() => {
-        getProducto(idItem)
-            .then(res => setProducto(res))
-    }, [idItem])
- */
     return (
         <div>
             <ItemDetail {...producto} />

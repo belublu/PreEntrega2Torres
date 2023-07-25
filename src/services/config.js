@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import {getFirestore} from "firebase/firestore"
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDfmRdKaGpcL0t5o62Ks5FQmtXZoQXx6mk",
+    apiKey: import.meta.env.VITE_FIREBASE,
     authDomain: "scentopia-efeac.firebaseapp.com",
     projectId: "scentopia-efeac",
     storageBucket: "scentopia-efeac.appspot.com",

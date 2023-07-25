@@ -28,15 +28,23 @@
     font-weight: 500;
 }
 
-.marcaCard{
+.marcaCard {
     margin-bottom: 20px;
 }
 
-.btnDetalle {
-    border: rgb(234, 95, 118) !important;
-    border-radius: 20px !important;
+.btn.btnDetalle {
+    border: rgb(234, 95, 118);
+    border-radius: 20px;
     width: 90%;
-    background-color: rgb(234, 95, 118) !important;
+    background-color: rgb(234, 95, 118);
     font-weight: 500;
     margin-top: 20px;
+}
+
+
+
+.btn.btnDetalle:hover {
+    box-shadow: 0 0 10px #e5335f;
+    background-color: rgb(223, 60, 87);
+    --bs-btn-hover-bg: rgb(234, 95, 118);
 }

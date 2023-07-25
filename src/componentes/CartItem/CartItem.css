@@ -2,10 +2,23 @@
     height: 150px;
 }
 
-/* .centrar-contenido {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-} */
+.cantidadCart, .precioCart{
+    font-weight: 600;
+}
+
+.btnCartItem{
+    color: white;
+    border: rgb(234, 95, 118);
+    border-radius: 20px;
+    width: 50%;
+    height: 35px;
+    background-color: rgb(234, 95, 118);
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.btnCartItem:hover {
+    box-shadow: 0 0 10px #e5335f;
+    background-color: rgb(223, 60, 87);
+    --bs-btn-hover-bg: rgb(234, 95, 118);
+}

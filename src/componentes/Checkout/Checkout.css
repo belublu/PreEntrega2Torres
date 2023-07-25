@@ -1,0 +1,59 @@
+.ordenCompra{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.imgProductoCheckout{
+    height: 120px;
+}
+
+.marcaCheckout{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.nombreCheckout{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.cantidadCheckout, .subtotalCheckout{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.formCheckoutFinal{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.form-group input{
+    border-radius: 10px;
+    border: solid 2px #e5335f;
+    height: 30px;
+}
+
+.form-group input:focus{
+    outline-color:#e5335f;
+}
+
+.opcionesPago{
+    font-size: 15px;
+}
+
+.btnFinalizarCheckout {
+    border: rgb(234, 95, 118);
+    border-radius: 20px;
+    width: 250px;
+    height: 40px;
+    background-color: rgb(234, 95, 118);
+    font-weight: 500;
+    margin-top: 20px;
+    color: white;
+}
+
+.btnFinalizarCheckout:hover {
+    box-shadow: 0 0 10px #e5335f;
+    background-color: rgb(223, 60, 87);
+    --bs-btn-hover-bg: rgb(234, 95, 118);
+}

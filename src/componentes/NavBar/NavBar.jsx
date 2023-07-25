@@ -9,15 +9,15 @@ const NavBar = () => {
     return (
         <Navbar expand="md" bg="custom" variant="dark" className="miNavBar">
             <Container>
-                <Navbar.Brand as={Link} to="/">SCENTOPIA</Navbar.Brand>
+                <Navbar.Brand className='navBarPersonalizado' as={Link} to="/">SCENTOPIA</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ms-auto justify-content-end">
-                        <Nav.Link as={NavLink} to="/categoria/1">Mujer</Nav.Link>
-                        <Nav.Link as={NavLink} to="/categoria/2">Hombre</Nav.Link>
-                        <Nav.Link as={NavLink} to="/categoria/3">Niñas</Nav.Link>
-                        <Nav.Link as={NavLink} to="/categoria/4">Niños</Nav.Link>
-                        <Nav.Link as={NavLink} to="/categoria/5">Sets</Nav.Link>
+                        <Nav.Link className='navLinkPersonalizado' as={NavLink} to="/categoria/1">Mujer</Nav.Link>
+                        <Nav.Link className='navLinkPersonalizado' as={NavLink} to="/categoria/2">Hombre</Nav.Link>
+                        <Nav.Link className='navLinkPersonalizado' as={NavLink} to="/categoria/3">Niñas</Nav.Link>
+                        <Nav.Link className='navLinkPersonalizado' as={NavLink} to="/categoria/4">Niños</Nav.Link>
+                        <Nav.Link className='navLinkPersonalizado' as={NavLink} to="/categoria/5">Sets</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
                 <CartWidget />

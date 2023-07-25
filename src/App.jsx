@@ -8,7 +8,6 @@ import Checkout from "./componentes/Checkout/Checkout";
 import "./App.css"
 
 
-
 const App = () => {
   return (
     <>
